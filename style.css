@@ -1,0 +1,529 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: white;
+  margin: 0px;
+  padding: 0px;
+}
+
+p1 {
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+  font-size: 100px;
+  color:white;
+}
+
+p2 {
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+  font-size: 42px;
+}
+
+p3{
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: bold;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+  font-size: 100px;
+  color:#6e6b65;
+}
+
+h4{
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+  font-size: 20px;
+  color: #000000;
+}
+
+h4.mod{
+  color:white;
+}
+
+p5{
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: bold;
+  text-align: center;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+  font-size: 100px;
+  color:white;
+}
+
+p6{
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+  font-size: 24px;
+}
+
+.top-container{
+  position: fixed;
+  padding: 0;
+  width: 100%;
+  background-color: white;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 5px 10px gray;
+  z-index: 1000;
+  transition: background-color 0.6s;
+}
+
+.top-container.trig{
+  background-color: black;
+  opacity: 1;
+  box-shadow: 0 0px;
+}
+
+
+.top-link{
+  text-decoration: none;
+  color: black;
+}
+
+.logo-container{
+  position: relative;
+  width: 180px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.logo-link{
+  position: absolute;
+  width: 70px;
+  height: 50px;
+  overflow: hidden;
+  transition: right 1s;
+  z-index: 51;
+  right: 110px;
+}
+
+.logo-link img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.logo-link.anim{
+  right:20px;
+}
+
+.logo-land-link{
+  right:0px;
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  overflow: hidden;
+  z-index: 50;
+}
+
+.logo-land-link img{
+  object-fit: cover;
+  height: 102%;
+  width: 100%;
+}
+
+.video-container{
+  position: relative;
+  width: auto;
+  height: auto;
+  padding: 0px;
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+}
+
+.video-container video{
+  width: 100%;
+  height: 100%;
+}
+
+.text-overlay-video{
+  position: absolute;
+  top:20%;
+  text-shadow: 2px 2px 4px #000000;
+  text-align: center;
+  width: 100%;
+  z-index: 10;
+}
+
+.box-comment-container{
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
+}
+
+.box-comment-container.show{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.box-comment-container2{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+
+}
+
+.zwischen-box{
+  display: flex;
+  width: auto;
+  height: 100px;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
+}
+
+.zwischen-box.show{
+  background-color: black;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.box-comment{
+  width: 700px;
+  height: 300px;
+}
+
+.scroll-trigger {
+}
+
+.scroll-trigger2{
+}
+
+.box-photo-container{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width:auto;
+  height: 650px;
+  padding: 15px;
+}
+
+.box-photo{
+  position: relative;
+  float:left;
+  display: flex;
+  width: 600px;
+  height: 600px;
+  border-radius: 20px;
+  background-color: grey;
+  overflow: hidden;
+}
+
+.gallery-image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  object-fit: cover;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.gallery-image.active {
+  opacity: 1;
+  z-index: 2;
+  object-fit: cover;
+}
+
+button {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  border:0px;
+  cursor: pointer;
+  background-color: #f0f0f0; /*  Установите цвет фона (опционально) */
+  opacity: 0.5; /* Прозрачность 50% для всего элемента */
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover{
+  transform: scale(1.1);
+}
+
+.for-button{
+  position: absolute;
+  display: flex;
+  width:60px;
+  height: 60px;
+  z-index: 52;
+  top:50%;
+}
+
+.button-left{
+  left:10px;
+}
+
+.button-right{
+  position: absolute;
+  right:10px;
+}
+
+.box-photo-text{
+  display: flex;
+  width: 600px;
+  height: 600px;
+  text-align: justify;
+}
+
+.saloon{
+  position: relative;
+  width: auto;
+  height: 900px;
+  overflow: hidden;
+  background-color: black;
+  clip-path: polygon(0 0, 100% 8%, 100% 100%, 0% 100%);
+}
+
+.saloon img{
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+}
+
+.interior-scroll-trigger {
+}
+
+.interior-comment-container{
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
+}
+
+.interior-comment-container.show{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.interior-comment{
+  width: 700px;
+  height: 300px;
+  text-align: center;
+}
+
+.zwischen-box{
+  display: flex;
+  width: auto;
+  height: 100px;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.interior-container{
+  display: flex;
+  position: relative;
+  width: auto;
+  height: 800px;
+  background-color: grey;
+  object-fit: cover;
+  overflow: hidden;
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 0 99%);
+  transform: translateY(-3px);
+}
+
+.interior-container img{
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+}
+
+.adventures-container{
+  position: relative;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  width:auto;
+  height: 720px;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.adventures-cart{
+  display: flex;
+  flex-direction: column;
+  width: 390px;
+  height: 700px;
+  z-index: 2;
+  border-radius: 25px;
+  border-width: 0.5px;
+  border-color: black;
+  border-style: inset ;
+  overflow: hidden;
+  position: relative;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
+}
+
+.adventures-cart.show{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.adventures-cart-img{
+  width: 100%;
+  padding-bottom: calc(100% * 1.25);
+  overflow: hidden;
+  background-color: black;
+  position: absolute;
+}
+
+.adventures-cart-w{
+  width: 100%;
+  position: absolute;
+  padding-bottom: calc(100% * 1.26);
+  background-color:#6e6b65;
+  overflow: hidden;
+}
+
+.adventures-cart-img img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.adventures-cart-text {
+  display: flex;
+  flex-grow: 1;
+  overflow-wrap: break-word;
+  text-align: justify;
+  padding: 15px;
+  padding-bottom: 40px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.st1{
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+}
+
+.st2{
+  clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+}
+
+.st3{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+}
+
+.zov-container{
+  width: auto;
+  padding-top: 40px;
+  height:180px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
+}
+
+.zov-container.show{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-trigger-zov{
+}
+
+.scroll-trigger-carts{
+}
