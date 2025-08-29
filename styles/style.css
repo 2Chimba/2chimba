@@ -450,8 +450,7 @@ button:hover{
   position: relative;
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
-  transition: transform 0.3s ease-in-out;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
 .adventures-cart.show{
