@@ -26,9 +26,9 @@ h1,h2{
   line-height: 70px;
   font-weight: 400;
   text-shadow:
-    -1px -1px 1 #000,  /* Обводка слева-сверху (черная) */
-     1px -1px 1 #000,  /* Обводка справа-сверху (черная) */
-    -1px  1px 1 #000,  /* Обводка слева-снизу (черная) */
+    -1px -1px 1 #000,
+     1px -1px 1 #000,
+    -1px  1px 1 #000,
      1px  1px 1 #000
 }
 
@@ -141,6 +141,7 @@ a{
 .logo__link{
   position: absolute;
   width: 40%;
+  max-width: 100px;
   aspect-ratio: 1 / 1;
   overflow: hidden;
   transition: right 1s;
