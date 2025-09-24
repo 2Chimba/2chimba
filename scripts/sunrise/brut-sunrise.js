@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
 const scrollTrigger = document.querySelector('.scroll-trigger2');
-const fadeInBlock = document.querySelector('.zwischen-box');
-const top = document.querySelector('.top-container');
-const h4mod = document.querySelectorAll('h4');
-const logoScroll = document.querySelector('.logo-link');
+const fadeInBlock = document.querySelector('.comfort__box');
+const top = document.querySelector('header');
+const h4mod = document.querySelectorAll('.header__txt');
+const logoScroll = document.querySelector('.logo__link');
 
 function isElementInViewport(el) {
   if (!el) return false;
@@ -25,11 +25,11 @@ window.addEventListener('scroll', function() {
     logoScroll.classList.add('anim');
   }
   else {
-      fadeInBlock.classList.remove('show');
-      top.classList.remove('trig');
-      h4mod.forEach(h4 => h4.classList.remove('mod'));
-      logoScroll.classList.remove('anim');
-    }
+    fadeInBlock.classList.remove('show');
+    top.classList.remove('trig');
+    h4mod.forEach(h4 => h4.classList.remove('mod'));
+    logoScroll.classList.remove('anim');
+  }
 
 });
 });

@@ -10,137 +10,137 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class = "top-container">
-      <div class = "logo-container">
-        <div class = "logo-link">
-          <a href='#' class = "top-link">
+    <header>
+        <div class = "header__logo">
+          <a href='#' class = "logo__link">
             <img src="media/logo/loggo.png">
           </a>
-        </div>
-
-        <div class = "logo-land-link">
-          <a href="#" class = "top-link">
-            <img src = "media/logo/land.png">
-          </a>
-        </div>
-      </div>
-      <a href="#" class = "top-link"> <h4> ГЛАВНАЯ </h4></a>
-      <a href="#" class = "top-link"> <h4> УСЛУГИ </h4></a>
-      <a href="#" class = "top-link"> <h4> О НАС </h4></a>
-      <a href="#" class = "top-link"> <h4> ПОРТФОЛИО </h4></a>
-      <a href="#" class = "top-link"> <h4> КОНТАКТЫ </h4></a>
-    </div>
-    <div class = "video-container">
-      <video autoplay muted loop>
-        <source src="media/video/toyota.mp4" type="video/mp4">
-        Ваш браузер не поддерживает видео тег.
-      </video>
-      <div class = "text-overlay-video">
-        <p1>НЕПРЕРЫВНОЕ УЛУЧШЕНИЕ ЛУЧШЕ, ЧЕМ ОТЛОЖЕННОЕ СОВЕРШЕНСТВО</p1>
-      </div>
-    </div>
-
-    <div class="scroll-trigger">
-    </div>
-    <div class = "box-comment-container">
-      <div class = " box-comment">
-      <p3>ВРЕМЯ ПОКОРЯТЬ НОВЫЕ ВЕРШИНЫ</p3>
-      </div>
-    </div>
-    <script src = "scripts/sunrise/sunrise.js"></script>
-
-    <div class = "box-photo-container">
-      <div class = "box-photo">
-        <div class = "for-button button-left">
-          <button id="prevButton">←</button>
-        </div>
-        <div class = "for-button button-right">
-          <button id="nextButton">→</button>
-        </div>
-        <img src = "media/photo/exterior/1.jpg" alt ="Image 1" class="gallery-image active">
-        <img src = "media/photo/exterior/2.jpg" alt ="Image 2" class="gallery-image">
-        <img src = "media/photo/exterior/3.jpg" alt ="Image 3" class="gallery-image">
-        <img src = "media/photo/exterior/4.jpg" alt ="Image 4" class="gallery-image">
-        <img src = "media/photo/exterior/5.jpg" alt ="Image 5" class="gallery-image">
-        <img src = "media/photo/exterior/6.jpg" alt ="Image 6" class="gallery-image">
-        <img src = "media/photo/exterior/7.jpg" alt ="Image 7" class="gallery-image">
-      </div>
-
-      <div class = "box-photo-text">
-        <p2>Land Cruiser 80 – это вневременная классика, отличающаяся брутальным и узнаваемым дизайном. Его угловатые формы, массивная решетка радиатора и простая оптика подчеркивают надежность и готовность к любым приключениям. Этот автомобиль излучает уверенность и демонстрирует свою легендарную проходимость даже в статике. Практичный. Легендарный.
-      </div>
-    </div>
-
-    <script src = "scripts/gallery/gallery-exterior.js"></script>
-
-    <div class="interior-scroll-trigger">
-    </div>
-    <div class = "interior-comment-container">
-      <div class = " interior-comment">
-      <p3> НАДЁЖНОСТЬ БРУТАЛЬНОСТЬ </p3>
-      </div>
-    </div>
-    <script src = "scripts/sunrise/interior-sunrise.js"></script>
-
-    <div class = "saloon">
-      <img src = "media/photo/interior/all.jpg">
-    </div>
-
-    <div class="scroll-trigger2">
-    </div>
-    <div class = "box-comment-container2">
-      <div class = "zwischen-box">
-      <p5>КОМФОРТ</p5>
-      </div>
-    </div>
-    <script src = "scripts/sunrise/brut-sunrise.js"></script>
-
-    <div class = "interior-container">
-      <img src = "media/photo/interior/saloon1.jpg">
-    </div>
-
-    <div class = "scroll-trigger-zov">
-    </div>
-    <div class = 'zov-container'>
-      <p3> ЗОВ ПРИКЛЮЧЕНИЙ </p3>
-    </div>
-    <script src = "scripts/sunrise/zov-sunrise.js"></script>
-
-    <div class = 'adventures-container'>
-      <div class = 'adventures-cart'>
-        <div class = 'scroll-trigger-carts'></div>
-        <div class = 'adventures-cart-w st1'>
-          <div class = 'adventures-cart-img st1'>
-            <img src = 'media/photo/adventures/Adv1.jpg'>
+          <div class = "logo__land-link">
+            <a href="#" class = "header__link">
+              <img src = "media/logo/land.png">
+            </a>
           </div>
         </div>
-        <div class = 'adventures-cart-text'>
-          <p6>Выбраться из городской суеты и увидеть своими глазами всю красоту природы. Отвлечься от серого города, увидив дивные краски этого могучего мира
+        <nav>
+          <ul>
+            <li><a href="#" class = "header__link"> <span class = 'header__txt'> ГЛАВНАЯ </span></a></li>
+            <li><a href="#" class = "header__link"> <span class = 'header__txt'> УСЛУГИ </span></a></li>
+            <li><a href="#" class = "header__link"> <span class = 'header__txt'> О НАС </span></a></li>
+            <li><a href="#" class = "header__link"> <span class = 'header__txt'> ПОРТФОЛИО </span></a></li></li>
+            <li><a href="#" class = "header__link"> <span class = 'header__txt'> КОНТАКТЫ </span></a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+      <div class = "main__video-container">
+        <video autoplay muted loop>
+          <source src="media/video/toyota.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео тег.
+        </video>
+        <div class = "main__overlay-video">
+          <h1>НЕПРЕРЫВНОЕ УЛУЧШЕНИЕ ЛУЧШЕ, <br>ЧЕМ ОТЛОЖЕННОЕ СОВЕРШЕНСТВО</h1>
         </div>
       </div>
-      <div class = 'adventures-cart'>
-        <div class = 'scroll-trigger-carts'></div>
-        <div class = 'adventures-cart-w st2'>
-          <div class = 'adventures-cart-img st2'>
-            <img src = 'media/photo/adventures/adv2.jpg'>
+        <div class="scroll-trigger"></div>
+        <div class = "main__first-box-comment-container">
+            <h2>ВРЕМЯ ПОКОРЯТЬ<br>НОВЫЕ ВЕРШИНЫ</h2>
+        </div>
+        <script src = "scripts/sunrise/sunrise.js"></script>
+        <div class = "main__gallery-container">
+          <div class = "gallery__box-photo">
+            <div class = "gallery__button button__left">
+              <button id="prevButton">←</button>
+            </div>
+            <div class = "gallery__button button__right">
+              <button id="nextButton">→</button>
+            </div>
+            <img src = "media/photo/exterior/1.jpg" alt ="Image 1" class="gallery__image active">
+            <img src = "media/photo/exterior/2.jpg" alt ="Image 2" class="gallery__image">
+            <img src = "media/photo/exterior/3.jpg" alt ="Image 3" class="gallery__image">
+            <img src = "media/photo/exterior/4.jpg" alt ="Image 4" class="gallery__image">
+            <img src = "media/photo/exterior/5.jpg" alt ="Image 5" class="gallery__image">
+            <img src = "media/photo/exterior/6.jpg" alt ="Image 6" class="gallery__image">
+            <img src = "media/photo/exterior/7.jpg" alt ="Image 7" class="gallery__image">
+          </div>
+
+          <div class = "gallery__text">
+            <p>Land Cruiser 80 – это вневременная классика, отличающаяся брутальным и узнаваемым дизайном. Его угловатые формы, массивная решетка радиатора и простая оптика подчеркивают надежность и готовность к любым приключениям. Этот автомобиль излучает уверенность и демонстрирует свою легендарную проходимость даже в статике. Практичный. Легендарный. Проходимый везде и всегда.</p>
           </div>
         </div>
-        <div class = 'adventures-cart-text'>
-          <p6>Проехать с комфортом там, куда остальные не могут даже добраться? Легко! Произведение инженерной мысли под вашим контролем доедет куда угодно
+
+        <script src = "scripts/gallery/gallery-exterior.js"></script>
+
+        <div class="interior-scroll-trigger">
         </div>
-      </div>
-      <div class = 'adventures-cart'>
-        <div class = 'scroll-trigger-carts'></div>
-        <div class = 'adventures-cart-w st3'>
-          <div class = 'adventures-cart-img st3'>
-            <img src = 'media/photo/adventures/adv3.jpg'>
+        <div class = "interior-comment-container">
+            <h2>НАДЁЖНОСТЬ<br>БРУТАЛЬНОСТЬ</h2>
+        </div>
+        <script src = "scripts/sunrise/interior-sunrise.js"></script>
+
+        <div class = "saloon">
+          <img src = "media/photo/interior/all.jpg">
+        </div>
+
+        <div class="scroll-trigger2"></div>
+
+        <div class = "main__first-box-comment-container2">
+          <div class = "comfort__box">
+            <h1>КОМФОРТ</h1>
           </div>
         </div>
-        <div class = 'adventures-cart-text'>
-          <p6>Сложная дорога не станет преградой между Вами и её Величеством природой. Land Cruiser проедет сквозь непогоду и любую дорогу
+        <script src = "scripts/sunrise/brut-sunrise.js"></script>
+
+        <div class = "interior-container">
+          <img src = "media/photo/interior/saloon1.jpg">
         </div>
+
+        <div class = "scroll-trigger-zov">
+        </div>
+        <div class = 'zov-container'>
+          <h2>ЗОВ ПРИКЛЮЧЕНИЙ</h2>
+        </div>
+        <script src = "scripts/sunrise/zov-sunrise.js"></script>
+
+        <div class = 'adventures-container'>
+          <div class = 'adventures-cart'>
+            <div class = 'scroll-trigger-carts'></div>
+            <div class = 'adventures-cart-w st1'>
+              <div class = 'adventures-cart-img st1'>
+                <img src = 'media/photo/adventures/Adv1.jpg'>
+              </div>
+            </div>
+            <div class = 'adventures-cart-text'>
+              <p>Выбраться из городской суеты и увидеть своими глазами всю красоту природы. Отвлечься от серого города, увидив дивные краски этого могучего мира.</p>
+            </div>
+          </div>
+          <div class = 'adventures-cart'>
+            <div class = 'scroll-trigger-carts'></div>
+            <div class = 'adventures-cart-w st2'>
+              <div class = 'adventures-cart-img st2'>
+                <img src = 'media/photo/adventures/adv2.jpg'>
+              </div>
+            </div>
+            <div class = 'adventures-cart-text'>
+              <p>Проехать с комфортом там, куда остальные не могут даже добраться? Легко! Произведение инженерной мысли под вашим контролем доедет куда угодно.</p>
+            </div>
+          </div>
+          <div class = 'adventures-cart'>
+            <div class = 'scroll-trigger-carts'></div>
+            <div class = 'adventures-cart-w st3'>
+              <div class = 'adventures-cart-img st3'>
+                <img src = 'media/photo/adventures/adv3.jpg'>
+              </div>
+            </div>
+            <div class = 'adventures-cart-text'>
+              <p>Сложная дорога не станет преградой между Вами и её Величеством природой. Land Cruiser проедет сквозь непогоду и любую дорогу.</p>
+            </div>
+          </div>
+          <script src = "scripts/sunrise/cart1-sunrise.js"></script>
+        </div>
+    </main>
+    <footer>
+      powered by 2Chimba
       </div>
-      <script src = "scripts/sunrise/cart1-sunrise.js"></script>
-    </div>
+    </footer>
   </body>
 </html>

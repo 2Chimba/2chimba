@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const images = document.querySelectorAll('.gallery-image');
+  const images = document.querySelectorAll('.gallery__image');
   const prevButton = document.getElementById('prevButton');
   const nextButton = document.getElementById('nextButton');
   let currentIndex = 0;

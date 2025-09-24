@@ -1,6 +1,6 @@
   document.addEventListener('DOMContentLoaded', function() {
   const scrollTrigger = document.querySelector('.scroll-trigger');
-  const fadeInBlock = document.querySelector('.box-comment-container');
+  const fadeInBlock = document.querySelector('.main__first-box-comment-container');
 
   function isElementInViewport(el) {
     if (!el) return false;
