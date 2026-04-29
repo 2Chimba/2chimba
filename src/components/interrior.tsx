@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 
 export const Interrior = () => {
   return (
-    <section className="flex flex-col mt-40">
+    <section className="flex flex-col mt-40 w-full">
       <motion.span
         className="text-6xl text-center"
         initial={{ opacity: 0, y: 100 }}
